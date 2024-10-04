@@ -61,24 +61,23 @@
   
 ## Основная функция
 ### Функция для расчета периметра или площади фигуры
-
-def calc(fig, func, size): 
-    # Проверяем, что фигура и функция являются допустимыми значениями 
-    assert fig in figs 
-    assert func in funcs 
-
-    # Вызываем соответствующую функцию из импортированного модуля 
-    # с помощью eval и выводим результат 
-    result = eval(f'{fig}.{func}(*{size})') 
-    print(f'{func} of {fig} is {result}') 
+    def calc(fig, func, size): 
+        # Проверяем, что фигура и функция являются допустимыми значениями        assert fig in figs 
+        assert func in funcs 
+        # Вызываем соответствующую функцию из импортированного модуля 
+        # с помощью eval и выводим результат 
+        result = eval(f'{fig}.{func}(*{size})') 
+        print(f'{func} of {fig} is {result}') 
 
 - Примеры вызова функций:
 1. calc('circle', 'area', [5])  # расчет площади круга радиуса 5 
 
 Результат: area of circle is 78.5
+
 2. calc('square', 'perimeter', [4])  # расчет периметра квадрата со стороной 4 
 
 Результат: perimeter of square is 16
+
 3. calc('circle', 'perimeter', [3])  # расчет периметра круга радиуса 3 
 
 Результат: perimeter of circle is 18.84
@@ -98,7 +97,7 @@ figs = ['circle', 'square']
 funcs = ['perimeter', 'area']
 
 
-calc('circle', 'area', [5])  # расчет площади круга радиуса 5
+calc('circle', 'area', [5])  # расчет площади круга радиуса 5 
 
 calc('square', 'perimeter', [4])  # расчет периметра квадрата со стороной 4
 
