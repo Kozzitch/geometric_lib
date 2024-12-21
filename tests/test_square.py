@@ -1,6 +1,4 @@
-import pytest
 import square
-import math
 
 
 def test_square_area():
@@ -15,4 +13,3 @@ def test_square_perimeter():
     expected_perimeter = 4 * side
     result = square.perimeter(side)
     assert result == expected_perimeter
-    
