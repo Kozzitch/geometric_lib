@@ -1,5 +1,8 @@
-import circle
-import square
+# calculate.py
+import math  # Используем только math, так как circle и square не нужны
+# импортировать только то, что будет использовано
+# import circle
+# import square
 
 figs = ['circle', 'square']
 funcs = ['perimeter', 'area']
@@ -21,7 +24,7 @@ def calc(fig, func, size):
 
     # Выполнение расчёта
     try:
-        result = eval(f'{fig}.{func}(*{size})')
+        result = eval(f'{fig}.{func}(*{size})')  # Этот подход следует рассматривать с осторожностью в реальном проекте
         return result
     except Exception as e:
         raise ValueError(f"Error in calculation: {e}")
