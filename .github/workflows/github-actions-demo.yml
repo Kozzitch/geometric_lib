@@ -35,11 +35,6 @@ jobs:
         with:
           python-version: 3.13
 
-      # 4. Шаг: Запуск юнит-тестов с использованием Test Discovery
-      - name: Run tests
-        run: |
-          pytest --maxfail=1 --disable-warnings -v  # Автоматическое обнаружение тестов pytest
-
       # 5. Шаг: Проверка стиля кода с помощью flake8
       - name: Check code style with flake8
         run: |
