@@ -2,7 +2,6 @@ import pytest
 import math
 from calculate import calc
 
-# Тестирование корректных данных
 def test_calc_circle_area():
     result = calc('circle', 'area', [5])
     expected = math.pi * 5 * 5
