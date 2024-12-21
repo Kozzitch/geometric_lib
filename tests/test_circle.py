@@ -15,4 +15,3 @@ def test_circle_perimeter():
     expected_perimeter = 2 * math.pi * radius
     result = circle.perimeter(radius)
     assert result == pytest.approx(expected_perimeter)
-
