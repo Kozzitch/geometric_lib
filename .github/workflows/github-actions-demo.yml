@@ -22,6 +22,10 @@ jobs:
       GROUP: "M3111"            
 
     steps:
+      # 0. Шаг: Чек-аут репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       # 1. Шаг: Вывод ФИО, номера группы и ника на GitHub
       - name: Display User Information
         run: |
