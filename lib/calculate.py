@@ -25,9 +25,9 @@ def calc(fig, func, size):
 
     # Динамический импорт модуля фигуры
     try:
-        module = importlib.import_module(fig)  
+        module = importlib.import_module(fig)
         # Получение функции из модуля и её вызов
-        func_to_call = getattr(module, func)  
+        func_to_call = getattr(module, func)
         result = func_to_call(*size)
         return result
     except Exception as e:
